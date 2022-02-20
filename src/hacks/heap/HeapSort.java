@@ -23,19 +23,19 @@ public class HeapSort {
     }
 
     // build max heap
-    void shiftDown(int[] array, int root, int size) {
-        var left = getLeftChild(root);
-        var right = getRightChild(root);
+    void shiftDown(int[] array, int rootIndex, int size) {
+        var left = getLeftChild(rootIndex);
+        var right = getRightChild(rootIndex);
         while (left < size){
             var maxChildIndex = left;
             if(right < size && array[right] > array[left]){
                 maxChildIndex = right;
             }
-            if(array[maxChildIndex] > array[root]){
-                swap(array, root, maxChildIndex);
-                root = maxChildIndex;
-                left = getLeftChild(root);
-                right = getRightChild(root);
+            if(array[maxChildIndex] > array[rootIndex]){
+                swap(array, rootIndex, maxChildIndex);
+                rootIndex = maxChildIndex;
+                left = getLeftChild(rootIndex);
+                right = getRightChild(rootIndex);
             }else{
                 break;
             }
@@ -51,12 +51,12 @@ public class HeapSort {
         }
     }
 
-    int getLeftChild(int root){
-        return root*2+1;
+    int getLeftChild(int rootIndex){
+        return rootIndex*2+1;
     }
 
-    int getRightChild(int root){
-        return root*2+2;
+    int getRightChild(int rootIndex){
+        return rootIndex*2+2;
     }
 
     void swap(int[] array, int i, int j) {
