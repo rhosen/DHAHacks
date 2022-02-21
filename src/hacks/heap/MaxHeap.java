@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 // https://binarysearch.com/problems/Kth-Smallest-Element
-// https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/submissions/
+// https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix
 
 public class MaxHeap {
 
