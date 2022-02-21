@@ -5,9 +5,10 @@ This repository contains some common math formulas that can be used to reduce ti
     S(n) = n * (n + 1) / 2
 
 ### Sum of n Odd Terms
-    S(n) = n * (n + 1) / 2
-    S(2n-1) = n * (2n - 1 + 1) / 2
-    S(2n-1) = n * 2n / 2 = n * n
+    S(n) = n * n
+
+### Sum of n Even Terms
+    S(n) = n * (n + 1)
 
 ### Problems 
-    https://leetcode.com/tag/math/
+[LeetCode](https://leetcode.com/tag/math/)

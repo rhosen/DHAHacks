@@ -8,4 +8,4 @@ This repository contains some famous variations of binary search. Solving these 
 > In such scenario we've to analyze the problem and figure out how we can be benefited from binary search.
 
 ### Problems:
-    https://leetcode.com/tag/binary-search/
+[LeetCode](https://leetcode.com/tag/binary-search/)

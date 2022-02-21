@@ -6,8 +6,8 @@ Max-Heap: In a Max-Heap the key present at the root node must be greatest among 
 Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
 
 ### Pattern
-> Kth Largest Element => Min Heap
+> Kth Largest Element => Min Heap\
 > Kth Smallest Element => Max Heap
 
 ### Problems
-    https://leetcode.com/tag/heap-priority-queue/
+[LeetCode](https://leetcode.com/tag/heap-priority-queue/)
