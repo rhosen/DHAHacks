@@ -14,4 +14,4 @@
 | If asked for maximum/minimum subarray/subset/options then | Dynamic programming                                                                  |
 | If asked for top/least K items then                       | Heap                                                                                 |                                                             
 | If asked for common strings then                          | Map<br/>Trie                                                                         |                                                                   
-| Else                                                      | Map/Set for O(1) time &amp<br/>O(n) spaceSort input for O(nlogn) time and O(1) space |
+| Else                                                      | Map/Set for O(1) time<br/>O(n) spaceSort input for O(nlogn) time and O(1) space      |
