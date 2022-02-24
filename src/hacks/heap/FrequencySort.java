@@ -38,6 +38,7 @@ public class FrequencySort {
 }
 
 class Pair implements Comparable<Pair> {
+
     char key;
     int value;
 
@@ -60,7 +61,7 @@ class Pair implements Comparable<Pair> {
 }
 
 // If you can't modify the class which you are using for comparison than you can create a comparator class
-// and implement Comparator interface there and use that for sorting
+// and implement Comparator interface there and use that for sorting. Ex:
 // class SomeComparator implements Comparator<SomeClass> {
 //    public int compare(SomeClass a, SomeClass b) {
 //        return a.property.compareTo(b.property);
