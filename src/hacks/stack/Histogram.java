@@ -1,16 +1,8 @@
 package hacks.stack;
 
+import hacks.stack.helper.Pair;
+
 import java.util.Stack;
-
-class Pair {
-    int element;
-    int index;
-
-    Pair(int element, int index) {
-        this.element = element;
-        this.index = index;
-    }
-}
 
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
 
@@ -47,11 +39,11 @@ public class Histogram {
         var st = new Stack<Pair>();
         var indexes = new int[heights.length];
         for (int i = 0; i < heights.length; i++) {
-            while (st.size() > 0 && st.peek().element >= heights[i]) st.pop();
+            while (st.size() > 0 && st.peek().getElement() >= heights[i]) st.pop();
             if (st.isEmpty()) {
                 indexes[i] = -1;
             } else {
-                indexes[i] = st.peek().index;
+                indexes[i] = st.peek().getIndex();
             }
             st.push(new Pair(heights[i], i));
         }
@@ -64,13 +56,13 @@ public class Histogram {
         var indexes = new int[n];
         for (int i = n - 1; i >= 0; i--) {
             // keep removing from stack until smallest element is found
-            while (st.size() > 0 && st.peek().element >= heights[i]) st.pop();
+            while (st.size() > 0 && st.peek().getElement() >= heights[i]) st.pop();
             if (st.isEmpty()) {
                 // no smallest element is found, so will use the array length to calculate the same or greater histogram
                 indexes[i] = n;
             } else {
                 // found next smallest element
-                indexes[i] = st.peek().index;
+                indexes[i] = st.peek().getIndex();
             }
             st.push(new Pair(heights[i], i));
         }
